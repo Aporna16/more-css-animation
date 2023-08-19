@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container , .inner{
+            width: 150px;
+            height: 150px;
+            border: 2px solid rgb(212, 206, 135)
+            
+        }
+        .container{
+            background-color: rgb(138, 218, 221);
+            
+        }
+        .inner{
+            background-color: rgb(216, 124, 124);
+            
+            /*  *** transform: scale();  means zoom kora bujhay.. scale() CSS function defines a transformation that resizes an element */
+            
+            /* *css code* transform: scale(0.75); */
+            /* *css code* transform: rotate(45deg); */
+            
+            /* when we try to transform more than one indivitually at that time the last transform works in this case. */
+            
+            /* If we want to transform more than one at a time, we will use this css style.
+            transform: scale(0.6) rotate(45deg); => For mutiple items add a space between them*/
+            transform: translate(50px, 50px) scale(0.6) rotate(45deg);
+            /* translate() CSS function repositions an element in the horizontal and/or vertical.. translate(__) translateX(__), translateY(__), translateZ(__) translate(__,__) */
+        }
+    </style>
+</head>
+<body>
+    <h1>Transformer lesson</h1>
+    <!-- .box.container*3>.inner{box-$} -->
+    <div class="box container">
+        <div class="inner">box-1</div>
+    </div>
+    <div class="box container">
+        <div class="inner">box-2</div>
+    </div>
+    <div class="box container">
+        <div class="inner">box-3</div>
+    </div>
+</body>
+</html>
