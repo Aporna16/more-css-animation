@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: brown !important;
+            /* !important dile kono kichu mane class,id, inline dekhbe na... brown ba css kaj korbe. most powerful */
+            color: peru;
+            color: aqua;
+
+            /* duita color define korle last je css thakbe oita hobe */
+        }
+
+        .fire {
+            color: rgb(35, 18, 183);
+        }
+
+        #third {
+            color: firebrick;
+        }
+
+        /* Class , id er majhe sob theke beshi priority pabe id "id>class"* 
+*/
+    </style>
+</head>
+
+<body>
+    <h1>My special heading-1</h1>
+    <h1>My special heading-2</h1>
+
+    <!-- ___class id___ theke o beshi priority pabe inline kono css likhle.. As like: <h1 [___style="color: rgb(228, 68, 151);"___(inline css)] class="fire" id="third">My special heading-3</h1> 
+Ager sob kichu k over-write kore felbe
+-->
+
+    <h1 style="color: rgb(228, 68, 151);" class="fire" id="third">My special heading-3</h1>
+    <h1>My special heading-4</h1>
+</body>
+
+</html>
+
+<!-- Specificity calculator -->
+<!-- !important > inline css > id > class > tag -->
